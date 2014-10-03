@@ -619,7 +619,19 @@
                     <label>Total Episodes: $INFO[ListItem.Property(TotalEpisodes)] • Unwatched Episodes: $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 					<label>$INFO[ListItem.Genre]</label>
 				    <textcolor>ff000000</textcolor>	
-		            <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+		            <visible>Container.Content(tvshows)</visible>
+					<control type="fadelabel">
+					<description>Fade Movie info/Tagline</description>
+					<left>5</left>
+					<top>28</top>
+					<width>400</width>
+					<visible>true</visible>
+					<scroll>false</scroll>
+					<scrollout>false</scrollout>
+					<pauseatend>5123</pauseatend>
+					<label>Total Episodes: $INFO[ListItem.Property(TotalEpisodes)] • Unwatched Episodes: $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+					<textcolor>ff000000</textcolor>	
+		            <visible>Container.Content(seasons)</visible>		            
 					</control>
 					<control type="fadelabel">
 					<description>Fade Movie info/Tagline</description>
